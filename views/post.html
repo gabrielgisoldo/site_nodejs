@@ -1,0 +1,17 @@
+{>template/}
+
+{<content}
+{?aviso}<span class="content center"><span class="preview_title">{aviso}</span></span>{/aviso}
+<div class="content center">
+    <div class="post_wrapper">
+        <div class="post_title">
+            {titulo}
+        </div>
+        <div class="post_content">
+            {texto}
+        </div>
+        <input type="hidden" value="{id}" name="id_post" id="id_post" />
+        <input type="button" name="editar" value="Editar Post" class="button" onclick="redirect_editar('{id}');">
+    </div>
+</div>
+{/content}

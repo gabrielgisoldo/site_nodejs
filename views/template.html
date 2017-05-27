@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu blog - Home</title>
+        <link rel="stylesheet" type="text/css" href="/css/paginas.min.css">
+        <script type="text/javascript" src="/js/paginas.min.js"></script>
+        <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <div class="background">
+            <div class="header" onclick="redirect_home();" style="cursor: pointer;">
+                <img src="/pictures/image_header.jpg" width="100%">
+            </div>
+
+            <div class="spacer-medium"></div>
+
+            <div class="menu">
+                <div class="menu_item" onclick="redirect_home();">
+                    HOME
+                </div>
+                <div class="menu_item" onclick="redirect_postagens();">
+                    POSTAGENS
+                </div>
+                <div class="menu_item" onclick="redirect_novo();">
+                    NOVO
+                </div>
+            </div>
+
+            <div class="spacer-medium"></div>
+
+            {+content/}
+
+            <div class="footer">
+                <div class="footer_content">
+                    Desenvolvido por: Gabriel Diniz Gisoldo<br>
+                    RM: 22214007-1
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

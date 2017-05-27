@@ -1,0 +1,24 @@
+{>template/}
+
+{<content}
+{?aviso}<span class="content center"><span class="preview_title">{aviso}</span></span>{/aviso}
+<div class="content center">
+    <div class="content center">
+        <form method="POST" action="/editar_post" class="form" id="form">
+            <fieldset>
+                <legend>Editar Postagem</legend>
+                <br><br>
+                <input type="hidden" value="{id}" name="id_post" id="id_post" />
+
+                <label for="titulo">Titulo Post:</label>
+                <textarea id="titulo" name="titulo" class="input_title" maxlength="120">{?titulo}{titulo}{/titulo}</textarea><br><br>
+
+                <label for="texto">Texto Post:</label>
+                <textarea id="texto" name="texto" class="input_text">{?texto}{texto}{/texto}</textarea><br><br>
+                <input type="submit" name="enviar" value="Gravar Edi&ccedil;&atilde;o Post" class="button">
+                <input type="button" name="remover" value="Excluir Post" class="button" onclick="excluir_post();"><br><br>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{/content}

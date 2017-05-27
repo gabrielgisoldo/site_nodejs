@@ -1,0 +1,21 @@
+{>template/}
+
+{<content}
+{?aviso}<span class="content center"><span class="preview_title">{aviso}</span></span>{/aviso}
+<div class="content center">
+    <div class="content center">
+        <form method="POST" action="/gravar_post" class="form">
+            <fieldset>
+                <legend>Nova Postagem</legend>
+                <br><br>
+                <label for="titulo">Titulo Post:</label><br>
+                <textarea id="titulo" name="titulo" class="input_title" maxlength="120"></textarea><br><br>
+
+                <label for="texto">Texto Post:</label><br>
+                <textarea id="texto" name="texto" class="input_text"></textarea><br><br>
+                <input type="submit" name="Eeviar" value="Gravar Post" class="button"><br><br>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{/content}

@@ -1,0 +1,20 @@
+{>template/}
+
+{<content}
+{?aviso}<span class="content center"><span class="preview_title">{aviso}</span></span>{/aviso}
+<div class="content center">
+    <div class="home_wrapper">
+        {#posts}
+        <div class="preview_wrapper">
+            <div class="preview_title">
+                {titulo}
+            </div>
+            <div class="preview_content">
+                {texto}
+            </div>
+            <a href="/post/{id}">Ler mais...</a>
+        </div>
+        {/posts}
+    </div>                
+</div>
+{/content}
